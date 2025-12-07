@@ -17,6 +17,7 @@
       color: #333;
       overflow-x: hidden;
     }
+
     .hero {
       position: relative;
       height: 100vh;
@@ -26,29 +27,28 @@
       text-align: center;
       color: white;
       overflow: hidden;
+    
+      background-image: url('https://www.shutterstock.com/shutterstock/videos/1099078471/thumb/12.jpg?ip=x480');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+      padding: 80px 20px;
     }
-
+    
     .hero::before {
-      content: '';
+      content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(135deg, rgba(156, 39, 176, 0.8), rgba(233, 30, 99, 0.7));
+      inset: 0;
+      background: linear-gradient(
+          135deg,
+          rgba(156, 39, 176, 0.55),
+          rgba(233, 30, 99, 0.45)
+        ),
+        rgba(0, 0, 0, 0.35); 
       z-index: 1;
     }
-
-    .hero-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 0;
-    }
-
+    
     .hero-content {
       position: relative;
       z-index: 2;
@@ -56,19 +56,19 @@
       padding: 2rem;
       animation: fadeInUp 1s ease-out;
     }
-
+    
     .hero h1 {
       font-size: 3.5rem;
       margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
     }
-
+    
     .hero p {
       font-size: 1.3rem;
       margin-bottom: 2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
     }
-
+    
     .cta-button {
       display: inline-block;
       padding: 1rem 2.5rem;
@@ -81,7 +81,7 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
-
+    
     .cta-button:hover {
       transform: translateY(-3px);
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);
@@ -210,14 +210,6 @@
       background: white;
       color: #667eea;
       transform: scale(1.05);
-    }
-
-    .support {
-      padding: 5rem 2rem;
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23fce4ec" width="1200" height="600"/><circle cx="200" cy="150" r="80" fill="%23f8bbd0" opacity="0.3"/><circle cx="900" cy="400" r="120" fill="%23f48fb1" opacity="0.2"/><circle cx="1000" cy="100" r="60" fill="%23f06292" opacity="0.3"/></svg>');
-      background-size: cover;
-      background-attachment: fixed;
-      position: relative;
     }
 
     .support-content {
@@ -438,7 +430,6 @@
 </head>
 <body>
   <section class="hero">
-    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'><defs><linearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%239c27b0;stop-opacity:1'/><stop offset='100%25' style='stop-color:%23e91e63;stop-opacity:1'/></linearGradient></defs><rect fill='url(%23grad)' width='1920' height='1080'/><circle cx='300' cy='200' r='150' fill='white' opacity='0.1'/><circle cx='1600' cy='800' r='200' fill='white' opacity='0.08'/><path d='M960 400 L980 450 L1030 460 L990 500 L1000 550 L960 525 L920 550 L930 500 L890 460 L940 450 Z' fill='white' opacity='0.15'/></svg>" alt="Background" class="hero-bg">
     <div class="hero-content">
       <h1>Together We Fight Cancer</h1>
       <p>Empowering patients, supporting families, and spreading awareness for a cancer-free future</p>
@@ -484,7 +475,7 @@
           <p>From diagnosis to recovery, we stand with you every step of the way. Together, we can overcome the obstacles and celebrate the victories.</p>
         </div>
         <div class="support-image">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ70xwLnlxr30VPCmCawx13xn1dB2WI0cdf-Q&s" alt="Support and care">
+          <img src="https://www.aljazeera.com/wp-content/uploads/2023/11/2023-10-27T081229Z_429183831_RC2D04AT9ZU7_RTRMADP_3_ISRAEL-PALESTINIANS-GAZA-HOSPITALS-CRISIS-1-1698853361.jpg?resize=1920%2C1080" alt="Support and care">
         </div>
       </div>
     </div>
